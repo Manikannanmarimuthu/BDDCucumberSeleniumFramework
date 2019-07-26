@@ -30,13 +30,13 @@ public class LoginStepDefinition {
 		Assert.assertEquals("Web admin", title);
 	}
 
-	@Then("^user enter username and password$")
-	public void user_enter_username_and_password() {
+	@Then("^user enter \"(.*)\" and \"(.*)\"$")
+	public void user_enter_username_and_password(String username, String pwd) {
 		WebDriverWait wait = new WebDriverWait(driver, 1000);
 		wait.until(ExpectedConditions
 				.visibilityOfElementLocated(By.xpath("//button[@class='btn btn-primary btn-block']")));
-		driver.findElement(By.xpath("//input[@placeholder='Username']")).sendKeys("admin");
-		driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys("password");
+		driver.findElement(By.xpath("//input[@placeholder='Username']")).sendKeys(username);
+		driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys(pwd);
 	}
 
 	@Then("^user clicks on login button$")
