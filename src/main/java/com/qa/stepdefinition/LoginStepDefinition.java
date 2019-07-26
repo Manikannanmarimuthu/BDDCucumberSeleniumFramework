@@ -30,7 +30,7 @@ public class LoginStepDefinition {
 		Assert.assertEquals("Web admin", title);
 	}
 
-	@Then("^user enter username  and password$")
+	@Then("^user enter username and password$")
 	public void user_enter_username_and_password() {
 		WebDriverWait wait = new WebDriverWait(driver, 1000);
 		wait.until(ExpectedConditions
@@ -51,4 +51,5 @@ public class LoginStepDefinition {
 		Assert.assertEquals("Web admin", title);
 		driver.quit();
 	}
+
 }
