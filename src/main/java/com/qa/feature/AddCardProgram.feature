@@ -11,5 +11,4 @@ Scenario: DIV Add Card Program Test
 	Then addCrdpgm click on the Add Card program leftmenu 
 	Then addCrdpgm enter the details bin and name and code and ppgm
 	|875454646|MTest|M001|pptest01| 
-	And addCrdpgm click ok button
-	
+	And addCrdpgm click ok button	
