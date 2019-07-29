@@ -56,7 +56,7 @@ public class AddPrepaidProgramStepDefinition {
 	@Then("^addpppgm click on the Wallet Prepaid Program$")
 	public void addpppgm_click_on_the_Wallet_Prepaid_Program() {
 		try {
-			Thread.sleep(7000);
+			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -68,7 +68,7 @@ public class AddPrepaidProgramStepDefinition {
 		JavascriptExecutor jse = ((JavascriptExecutor) driver);
 		jse.executeScript("jQuery('.nav-bracket li.nav-parent ul').css({display: 'block'})");
 		try {
-			Thread.sleep(7000);
+			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -84,15 +84,15 @@ public class AddPrepaidProgramStepDefinition {
 		driver.findElement(By.xpath("//input[@id='programCode']")).sendKeys(ppcode);
 		driver.findElement(By.xpath("//input[@id='settlementCycleParam']")).sendKeys("1");
 		driver.findElement(By.xpath("//input[@id='allowManualEntryFlag2']")).click();
-		JavascriptExecutor jse = (JavascriptExecutor)driver;
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
 		jse.executeScript("window.scrollBy(0,250)");
 		driver.findElement(By.xpath("//input[@id='axProjectCode']")).sendKeys(axpjcode);
 		driver.findElement(By.xpath("//input[@id='axDivisionCode']")).sendKeys(axdjcode);
-		JavascriptExecutor jse1 = (JavascriptExecutor)driver;
+		JavascriptExecutor jse1 = (JavascriptExecutor) driver;
 		jse1.executeScript("window.scrollBy(0,250)");
 		driver.findElement(By.xpath("//input[@id='axTransIdPrefix']")).sendKeys(axtrcode);
 		driver.findElement(By.xpath("//input[@id='maxBalanceScr']")).sendKeys("800");
-		JavascriptExecutor jse2 = (JavascriptExecutor)driver;
+		JavascriptExecutor jse2 = (JavascriptExecutor) driver;
 		jse2.executeScript("window.scrollBy(0,250)");
 		driver.findElement(By.xpath("//input[@id='accountPrefix']")).sendKeys(accprefix);
 	}
