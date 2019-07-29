@@ -6,7 +6,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "D:\\Naveen Assignments\\BDDFramework\\src\\main\\java\\com\\qa\\feature\\login.feature", glue = {
-		"com.qa.stepdefinition" }, format = { "pretty", "html:test-output", "json:json-output/cucumber.json",
+		"com.qa.stepdefinition.login.feature" }, format = { "pretty", "html:test-output", "json:json-output/cucumber.json",
 				"junit:junit-output/Cucumber.xml" }, monochrome = true, strict = true, dryRun = false)
 
 // Feature used to mention the feature  file location. 
