@@ -24,5 +24,5 @@ import cucumber.api.junit.Cucumber;
 //strict = it will check if any step is not defined in step definition file
 //dryRun = to check the mapping is proper between feature file and step def file
 
-public class TestRunner {
+public class LoginTestRunner {
 }
